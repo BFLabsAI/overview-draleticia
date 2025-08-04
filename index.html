@@ -1,1 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverView Projeto e Proposta Comercial - Letícia Fontes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .brand-gradient {
+            background: linear-gradient(90deg, #1a202c, #2d3748);
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .pain-icon {
+            background-color: #fed7d7;
+            color: #c53030;
+        }
+        .opportunity-icon {
+            background-color: #c6f6d5;
+            color: #2f855a;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #e2e8f0;
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 2rem 3rem;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-left: 0;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-right: 0;
+        }
+        .timeline-content {
+            position: relative;
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .timeline-dot {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-color: #2d3748;
+            border: 4px solid #f7fafc;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -12px;
+        }
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -12px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="brand-gradient text-white p-8 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight">BF LABS 🦅</h1>
+            <p class="text-lg text-gray-300 mt-2">Building The Future</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <!-- Introduction -->
+        <section class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">OverView do Projeto e Proposta Comercial</h2>
+            <p class="text-xl text-gray-600 mt-2">Para: Dra. Letícia Fontes</p>
+            <p class="text-md text-gray-500 mt-1">Data da Reunião: 04 de Agosto de 2025</p>
+        </section>
+
+        <!-- Executive Summary -->
+        <section class="mb-16">
+            <div class="card max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Resumo Executivo</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Dra. Letícia, nossa conversa foi direta e produtiva. Identificamos que, apesar dos 8 anos de mercado e da autoridade construída, existem gargalos operacionais e estratégicos que impedem um crescimento mais acelerado. A dependência de indicações e a falta de um funil de vendas otimizado geram um desperdício de potencial e da base de clientes já existente.
+                </p>
+                <p class="text-lg text-gray-700">
+                    A BF Labs propõe uma parceria estratégica para implementar uma máquina de vendas e marketing digital, utilizando automação e inteligência artificial para não apenas gerar demanda, mas qualificar os leads, reativar sua base e posicionar sua marca pelo valor, não pelo preço. Vamos transformar sua operação com tecnologia que funciona na prática.
+                </p>
+            </div>
+        </section>
+
+        <!-- Infographic: Pains & Opportunities -->
+        <section class="mb-16">
+            <h2 class="section-title">Diagnóstico: Dores vs. Oportunidades</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Pains -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-center text-red-700">Pontos de Dor Atuais</h3>
+                    <div class="card text-center">
+                        <div class="icon-circle pain-icon"><i class="fas fa-filter-circle-xmark fa-2x"></i></div>
+                        <h4 class="font-bold text-lg">Leads Frios no WhatsApp</h4>
+                        <p>Seu time perde tempo com contatos desqualificados, que não entendem o valor do seu serviço e só buscam preço.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="icon-circle pain-icon"><i class="fas fa-users-slash fa-2x"></i></div>
+                        <h4 class="font-bold text-lg">Base de Clientes Subutilizada</h4>
+                        <p>Pacientes atuais e antigos desconhecem a gama de procedimentos que você oferece. Dinheiro está na mesa.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="icon-circle pain-icon"><i class="fas fa-bullhorn fa-2x"></i></div>
+                        <h4 class="font-bold text-lg">Comunicação Técnica</h4>
+                        <p>A linguagem atual, embora correta, não conecta com o público-alvo (B e C), diminuindo a eficácia dos anúncios.</p>
+                    </div>
+                </div>
+                <!-- Opportunities -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-center text-green-700">Oportunidades Imediatas</h3>
+                    <div class="card text-center">
+                        <div class="icon-circle opportunity-icon"><i class="fas fa-fire fa-2x"></i></div>
+                        <h4 class="font-bold text-lg">Ativar Demanda Reprimida</h4>
+                        <p>Anos de mercado criaram uma audiência que te conhece, mas nunca recebeu a oferta certa para comprar.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="icon-circle opportunity-icon"><i class="fas fa-robot fa-2x"></i></div>
+                        <h4 class="font-bold text-lg">Qualificação com IA</h4>
+                        <p>Implementar um agente de IA para filtrar contatos e entregar apenas leads prontos para a conversão para sua equipe.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="icon-circle opportunity-icon"><i class="fas fa-funnel-dollar fa-2x"></i></div>
+                        <h4 class="font-bold text-lg">Otimização do Funil da Saúde</h4>
+                        <p>Educar o público com conteúdo de topo de funil, gerando confiança antes da oferta e aumentando a conversão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Plan -->
+        <section class="mb-16">
+            <h2 class="section-title">Plano de Ação Estratégico</h2>
+            <div class="relative">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="font-bold text-xl mb-2">Fase 1: Estruturação e Ativação Rápida (Mês 1)</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Diagnóstico e segmentação da sua base de clientes para identificar oportunidades de venda imediata.</li>
+                                <li>Criação de ofertas irresistíveis para reativação de ex-pacientes e cross-sell para pacientes atuais.</li>
+                                <li>Lançamento de campanhas de disparo via WhatsApp para gerar caixa rápido e validar a comunicação mais eficaz.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="font-bold text-xl mb-2">Fase 2: Consolidação do Funil e Inteligência (Mês 2)</h3>
+                             <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Implementação completa do <strong>Agente de IA</strong> para qualificar 100% dos leads, garantindo que sua equipe comercial foque apenas em quem está pronto para comprar.</li>
+                                <li>Análise das métricas da Fase 1 para refinar as campanhas de tráfego e o conteúdo.</li>
+                                <li>Início da distribuição de conteúdo estratégico (topo de funil) para educar o mercado, construir autoridade em escala e diminuir o custo por lead.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="font-bold text-xl mb-2">Fase 3: Otimização Contínua e Escala (Mês 3+)</h3>
+                             <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Análise de ROI em tempo real com relatórios diários enviados pelo nosso <strong>Assistente de IA</strong> direto no seu WhatsApp.</li>
+                                <li>Reuniões estratégicas mensais para alinhar metas, analisar performance e planejar os próximos passos com base em dados.</li>
+                                <li>Escala progressiva do investimento em mídia nos canais de maior performance para maximizar o retorno e consolidar sua posição no mercado.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commercial Proposal -->
+        <section class="mb-16">
+            <h2 class="section-title">Proposta Comercial</h2>
+            <div class="card max-w-4xl mx-auto border-4 border-gray-800">
+                <h3 class="text-2xl font-bold text-center mb-6">Assessoria de Performance em Vendas e Marketing Digital</h3>
+                
+                <div class="divide-y divide-gray-200">
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg">Escopo dos Serviços:</h4>
+                        <ul class="list-disc list-inside mt-2 space-y-2 text-gray-700">
+                            <li><strong>Gestão de Tráfego e Geração de Demanda:</strong> Planejamento e execução de campanhas em Meta Ads e Google Ads.</li>
+                            <li><strong>Automação e Inteligência de Vendas:</strong> Implementação de Agente de IA para qualificação de leads e automações de WhatsApp para nutrição e reativação da base.</li>
+                            <li><strong>Análise e Otimização Contínua:</strong> Relatórios diários de performance via Assistente de IA e reuniões mensais de planejamento estratégico.</li>
+                            <li><strong>Consultoria Estratégica:</strong> Alinhamento contínuo para garantir que as ações de marketing estejam 100% integradas com os objetivos comerciais.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg">Diferenciais da Parceria BF Labs:</h4>
+                         <ul class="list-disc list-inside mt-2 space-y-2 text-gray-700">
+                            <li><strong>Foco em Resultado:</strong> Nosso sucesso está atrelado ao seu. Não trabalhamos com contratos de fidelidade de 12 meses.</li>
+                            <li><strong>Tecnologia Aplicada:</strong> Usamos soluções nascidas e validadas na economia real, não teorias de mercado.</li>
+                             <li><strong>Visão de Dono:</strong> Pensamos como empresários. Entendemos de fluxo de caixa, margem e ROI.</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-6 text-center">
+                        <h4 class="font-bold text-lg mb-4">Investimento:</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                             <div class="bg-gray-100 p-6 rounded-lg">
+                                <p class="text-lg font-semibold">Taxa de Assessoria</p>
+                                <p class="text-3xl font-black text-gray-800 my-2">R$ 2.500 <span class="text-lg font-semibold">/mês</span></p>
+                                <p class="text-sm text-gray-600">(Valor promocional para os 3 primeiros meses. Após, R$ 3.000/mês)</p>
+                            </div>
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <p class="text-lg font-semibold">Verba de Mídia</p>
+                                <p class="text-3xl font-black text-gray-800 my-2">A partir de R$ 2.000 <span class="text-lg font-semibold">/mês</span></p>
+                                <p class="text-sm text-gray-600">(Investimento direto nas plataformas de anúncio, 100% revertido em tráfego)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps -->
+        <section class="text-center">
+            <h2 class="section-title">Próximos Passos</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-700 mb-8">
+                Dra. Letícia, esta proposta é o primeiro passo para construirmos uma operação de marketing e vendas que te traga previsibilidade e crescimento. Estamos prontos para colocar a mão na massa.
+            </p>
+            <div class="flex justify-center">
+                <a href="https://wa.me/5585997481913" target="_blank" class="bg-gray-900 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-gray-700 transition-colors duration-300">
+                    Aprovar Proposta e Iniciar a Transformação 🦅
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 p-8 bg-gray-900 text-white text-center">
+        <p class="font-bold">BF LABS - BUILDING THE FUTURE</p>
+        <p class="text-gray-400">Transforme seu negócio com tecnologia que realmente funciona.</p>
+    </footer>
+
+</body>
+</html>
 
